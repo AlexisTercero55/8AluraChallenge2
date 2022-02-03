@@ -1,0 +1,9 @@
+Autor: Alexis Tercero
+Documentación del proyecto
+
+Aplicación web : Juego del ahorcado
+
+
+
+---- javascript ----
+

@@ -1,0 +1,46 @@
+
+body{
+  background-color: #E89684;
+}
+.titulo {
+  padding: 15px;
+  width: 30vw;
+  margin: auto;
+  color: #F25027;
+  font-size: 60px;
+}
+
+.btn {
+  border: 0;
+  color: white;
+  font-weight: bold;
+  background-color: #E88579;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 0.5em;
+}
+.btn:hover{
+  background-color: #ee6050;
+}
+/* .btn:focus {     
+  background-color:blue;    
+} */
+
+.text-input {
+  background-color: #E89684;
+  border-radius: 0.5em;
+  border: 1px solid rgba(155, 154, 154, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 30%;
+  height: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* add border to canvas */
+canvas {
+  border: 8px solid #F27949;
+}
+

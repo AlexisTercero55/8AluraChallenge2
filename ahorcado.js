@@ -219,3 +219,25 @@ function iniciarJuego()
 }
 // activar juego cuando se presione el boton #iniciar-juego
 $('#iniciar-juego').click(iniciarJuego);
+
+/**
+ * Funcion para agragar una nueva palabra al array de palabras
+ * Se accede al input #input-nueva-palabra.
+ * Se obtiene el valor del input.
+ * Se verifica que no existan numeros o caracteres especiales.
+ * Se convierte a mayusculas.
+ */
+function agregarPalabra()
+{
+    let palabra = $('#input-nueva-palabra').val();
+    if(!palabra.match(/[0-9]/g) && !palabra.match(/[^a-zA-Z]/g))
+    {
+        palabra = palabra.toUpperCase();
+        palabras.push(palabra);
+        $('#input-nueva-palabra').val('');
+    }
+    // mostrar la ultima palabra agregada por consola
+    console.log(palabras[palabras.length - 1]);
+}
+// activar agregar palabra cuando se presione el boton #agregar-palabra
+$('#nueva-palabra').click(agregarPalabra);
